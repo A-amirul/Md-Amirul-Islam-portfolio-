@@ -3,7 +3,7 @@ import {
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { Link, ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 import img from "../assets/profile.jpg"
 
 const Header = () => {
@@ -47,7 +47,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        {/* button */}
       </div>
     </div>
   );
