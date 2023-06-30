@@ -9,6 +9,7 @@ import JS from "../assets/tools/JS.png"
 import html from "../assets/tools/html.png"
 import bootstrap from "../assets/tools/bootstrap.png"
 
+
 const Projects = () => {
   const projects = [
     {
@@ -72,8 +73,8 @@ const Projects = () => {
   return (
     
 
-    <div className="md:h-screen">
-      <div className="w-full flex flex-wrap justify-center items-center gap-10 lg:gap-20 pt-10 text-white " id="projects">
+    <div id="projects">
+      <div className="w-full flex flex-wrap justify-center items-center gap-10 lg:gap-20 pt-10 text-white " >
         {
           projects?.map((project, index) => (
             <div className="flex flex-col gap-2 items-center px-4 py-3 rounded-md bg-[#0000FF20]">

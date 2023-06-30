@@ -1,5 +1,4 @@
 import React from "react";
-import Services from "./Services";
 import MongoDB from "../assets/tools/mongodb.png"
 import Express from "../assets/tools/express.png"
 import react from "../assets/tools/React-icon.png"
@@ -8,6 +7,7 @@ import CSS from "../assets/tools/CSS.png"
 import TailWind from "../assets/tools/Tailwind.png"
 import JS from "../assets/tools/JS.png"
 import html from "../assets/tools/html.png"
+import profile from "../assets/profile.jpg"
 import bootstrap from "../assets/tools/bootstrap.png"
 import { BiCheckDouble } from "react-icons/bi";
 
@@ -96,10 +96,25 @@ const About = () => {
     }
   ];
   return (
-    <>
-      <h1 className="text-center text-primary md:text-3xl font-bold text-2xl mt-10 mb-14">Technical Skills</h1>
-      {/* skills */}
-      <div className="w-full flex flex-wrap gap-10 justify-center items-center  " id="about">
+    <div id="about">
+      <h3 className="text-center text-3xl text-primary font-bold my-10 md:my-20 ">About Me</h3>
+      <div className="w-full flex flex-wrap md:gap-20 justify-center items-center text-xl px-10 my-10 ">
+        <div className=" relative md:w-[300px]  h-full md:ms-10">
+          <img className="rounded-full" src={profile} alt="" />
+        </div>
+        <div className=" text-primary my-4">
+          <h3> <span className="text-white"> name : </span> Md Amirul Islam </h3>
+          <h3> <span className="text-white"> age : </span> 25 </h3>
+          <h3> <span className="text-white"> qualification : </span> BSc in CSE </h3>
+          <h3> <span className="text-white"> CGPA : </span> 3.79 out of 4.00 </h3>
+          <h3> <span className="text-white"> post : </span> FullStack Web Developer </h3>
+          <h3> <span className="text-white"> language : </span> Bangla </h3>
+          <h3> <span className="text-white"> language : </span> English </h3>
+          <a href="#"><button className="text-white"> download Resume <i className="fas fa-download"></i> </button></a>
+        </div>
+      </div>
+      <h1 className="text-center text-primary md:text-3xl font-bold text-2xl my-10">Technical Skills</h1>
+      <div className="w-full flex flex-wrap gap-10 justify-center items-center " >
        
         {skills.map((skill, index) => (
           <div
@@ -117,7 +132,7 @@ const About = () => {
               </div>
 
               <div className="w-[200px] md:w-[250px] h-[12px] bg-slate-800 rounded-lg mb-1">
-                <div className="bg-neutral-300 h-full " style={{width:skill.value + "%"}}>
+                <div className="bg-blue-700 h-full " style={{width:skill.value + "%"}}>
 
                 </div>
 
@@ -164,8 +179,7 @@ const About = () => {
 
       
 
-      <Services/>
-    </>
+    </div>
   );
 };
 

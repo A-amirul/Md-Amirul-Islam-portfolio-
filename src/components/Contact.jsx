@@ -8,16 +8,12 @@ const Contact = () => {
   return (
     <div className="md:px-10 px-7 my-10" id="contact">
       <div className="flex flex-col md:flex-row">
-        {/* text and icons */}
         <div className="md:w-1/2">
-        <h1 className="text-primary font-semibold text-3xl mt-16">
+        <h1 className="text-primary font-semibold text-3xl my-16">
       Connect with me
       </h1>
-      <p className="my-3 text-white md:w-1/2 leading-[2]">
-       Please contact me
-      </p>
-      {/* social icons */}
-      <div className="flex ">
+      
+      <div className="flex">
         <a href="https://www.linkedin.com/in/joshua-harris-321a24190/" target="_blank" rel="noreferrer">
           <img src={facebook} alt="" />
         </a>
@@ -34,7 +30,7 @@ const Contact = () => {
         </div>
         {/* form */}
         <div className="md:w-1/2">
-            <p className="mt-16 text-white text-2xl mb-6">Contact me</p>
+            <p className="mt-16 text-white text-2xl mb-6 font-bold">Contact me</p>
             <form>
                 <input type="text" name="name" placeholder="Name" className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded "/>
                 <input type="email" name="email" placeholder="Email" className="bg-[#F5F5F5] bg-opacity-10 py-3 px-3 md:w-3/4 w-full rounded my-3"/>
