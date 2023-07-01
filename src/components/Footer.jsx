@@ -1,9 +1,6 @@
 import React from "react";
-import facebook from "../assets/socials/facebook.png";
-import instagram from "../assets/socials/instagram.png";
-import email from "../assets/socials/sms.png";
 
-import { FaCloudDownloadAlt, FaEnvelopeOpen, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {  FaEnvelopeOpen, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
