@@ -15,7 +15,7 @@ import bootstrap from "../assets/tools/bootstrap.png"
 import p1 from "../assets/projectImage/language/language.jpg"
 import p2 from "../assets/projectImage/disney/disney.jpg"
 import p3 from "../assets/projectImage/chef/chef.jpg"
-import {Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 const Projects = () => {
 
   const projects = [
@@ -110,9 +110,9 @@ const Projects = () => {
             <h2 className="card-title">Global Language Academy</h2>
             <p>It is a foreign language learning website.Students can enroll their desire classes. </p>
             <div className=" flex gap-2 justify-between">
-              <a className="text-primary" href="">Client</a>
-              <a className="text-primary" href="">Server</a>
-              <a className="text-primary" href="">Live</a>
+              <a className="text-primary" href="https://github.com/A-amirul/global-language-academy-clientSide" target="_blank">Client</a>
+              <a className="text-primary" href="https://github.com/A-amirul/global-language-academy-serverSide" target="_blank">Server</a>
+              <a className="text-primary" href="https://global-language-academy-2651a.web.app" target="_blank">Live</a>
               <a> <button onClick={() => window.my_modal_1.showModal()} className="bg-primary hover:bg-blue-900 rounded px-2 py-1 text-white text-xs md:text-lg">Details</button></a>
             </div>
           </div>
@@ -128,9 +128,9 @@ const Projects = () => {
             <h2 className="card-title">Disney Dolls Paradise</h2>
             <p>Disney dolls Paradise are a collectible Disney Dolls which is online toy marketplace.</p>
             <div className=" flex gap-2 justify-between">
-              <a className="text-primary" href="">Client</a>
-              <a className="text-primary" href="">Server</a>
-              <a className="text-primary" href="">Live</a>
+              <a className="text-primary" href="https://github.com/A-amirul/disney-dolls-paradise-clientSide" target="_blank">Client</a>
+              <a className="text-primary" href="https://github.com/A-amirul/disney-dolls-paradise-serverSide" target="_blank">Server</a>
+              <a className="text-primary" href="https://disney-dolls-paradise.web.app" target="_blank">Live</a>
               <a> <button onClick={() => window.my_modal_2.showModal()} className="bg-primary hover:bg-blue-900 rounded px-2 py-1 text-white text-xs md:text-lg">Details</button></a>
             </div>
           </div>
@@ -148,9 +148,9 @@ const Projects = () => {
               <h2 className="card-title">Chef Corner</h2>
               <p className="w-full">ChefCorner is a online chefs collections where customers can hire their desire chefs.</p>
               <div className=" flex gap-2 justify-between">
-                <a className="text-primary" href="">Client</a>
-                <a className="text-primary" href="">Server</a>
-                <a className="text-primary" href="">Live</a>
+                <a className="text-primary" href="https://github.com/A-amirul/chef-recipe-clientSide" target="_blank">Client</a>
+                <a className="text-primary" href="https://github.com/A-amirul/chef-recipe-server" target="_blank">Server</a>
+                <a className="text-primary" href="https://the-shef-corner.web.app" target="_blank">Live</a>
                 <a> <button onClick={() => window.my_modal_3.showModal()} className="bg-primary hover:bg-blue-900 rounded px-2 py-1 text-white text-xs md:text-lg">Details</button></a>
               </div>
               {/* modal-1 */}

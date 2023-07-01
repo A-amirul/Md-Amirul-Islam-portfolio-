@@ -1,13 +1,13 @@
 import React from "react";
 
-import {  FaEnvelopeOpen, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaEnvelopeOpen, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div className="md:px-10 px-7 mt-24">
       <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
         <p>@ Copyright 2025 by Md Amirul Islam</p>
-        <p className="hidden sm:block">Fullstack Developer</p>
+        <p className="hidden sm:block">Fullstack | React | Frontend Developer</p>
         <p className="hidden sm:block">Designed by @amir</p>
       </div>
       {/* social media */}
