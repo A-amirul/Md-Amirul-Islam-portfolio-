@@ -102,9 +102,17 @@ const About = () => {
       <h3 className="text-center text-3xl text-primary font-bold my-10 md:my-20 ">About Me</h3>
       <div className="w-full flex flex-wrap md:gap-20 justify-center items-center md:text-xl px-10 my-10 ">
         <div className=" relative md:w-[300px]  h-full md:ms-10">
-          <img className="rounded-full" src={profile} alt="" />
+          <img className="rounded-full" src={profile} alt="" data-aos='fade-up'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out' />
         </div>
-        <div className=" text-primary my-4">
+        <div className=" text-primary my-4" data-aos='fade-up'
+          data-aos-offset='200'
+          data-aos-delay='50'
+          data-aos-duration='1000'
+          data-aos-easing='ease-in-out'>
           <h3> <span className="text-white "> Name : </span> Md Amirul Islam </h3>
           <h3> <span className="text-white"> Age : </span> 25 </h3>
           <h3> <span className="text-white"> Qualification : </span> BSc in CSE </h3>
@@ -123,8 +131,13 @@ const About = () => {
 
         {skills.map((skill, index) => (
           <div
+
             key={index}
-            className="flex gap-4 py-2 shadow-lg px-6 rounded-full items-center hover:animate-bounce ease-in-out duration-300"
+            className="flex gap-4 py-2 shadow-lg px-6 rounded-full items-center hover:animate-bounce ease-in-out duration-300" data-aos='fade-up'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'
           >
             <div className="w-10 h-10">
               <img className="w-full h-full rounded-full" src={skill.icon} alt={skill.name} />
@@ -156,7 +169,13 @@ const About = () => {
             <div className="flex flex-col bg-sky-900 dark:bg-[#224cff10] p-6 rounded-xl shadow-xl hover:scale-125 ease-in-out duration-500 mb-10 md:mb-0">
               {
                 softSkills?.slice(0, 5).map((sk, index) => (
-                  <div className="flex items-center gap-3 p-4 " key={index}>
+                  <div
+                    data-aos='fade-up'
+                    data-aos-offset='200'
+                    data-aos-delay='50'
+                    data-aos-duration='1000'
+                    data-aos-easing='ease-in-out'
+                    className="flex items-center gap-3 p-4" key={index} >
                     <BiCheckDouble color="white" size={22}></BiCheckDouble>
                     <p className="text-white">{sk.name}</p>
                   </div>
@@ -168,7 +187,13 @@ const About = () => {
             <div className="flex flex-col bg-sky-900 dark:bg-[#224cff10] p-6 rounded-xl shadow-xl hover:scale-125 ease-in-out duration-500 mb-10 md:mb-0">
               {
                 softSkills?.slice(5, 10).map((sk, index) => (
-                  <div className="flex items-center gap-3 p-4 " key={index}>
+                  <div
+                    data-aos='fade-up'
+                    data-aos-offset='200'
+                    data-aos-delay='50'
+                    data-aos-duration='1000'
+                    data-aos-easing='ease-in-out'
+                    className="flex items-center gap-3 p-4 " key={index}>
                     <BiCheckDouble color="white" size={22}></BiCheckDouble>
                     <p className="text-white">{sk.name}</p>
                   </div>

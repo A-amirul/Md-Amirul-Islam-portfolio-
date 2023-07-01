@@ -1,4 +1,8 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 import MongoDB from "../assets/tools/mongodb.png"
 import Express from "../assets/tools/express.png"
 import react from "../assets/tools/React-icon.png"
@@ -80,7 +84,11 @@ const Projects = () => {
       <div className="w-full flex flex-wrap justify-center items-center gap-10 lg:gap-20 pt-10 text-white " >
         {
           projects?.map((project, index) => (
-            <div className="flex flex-col gap-2 items-center px-4 py-3 rounded-md bg-[#0000FF20]" key={index}>
+            <div className="flex flex-col gap-2 items-center px-4 py-3 rounded-md bg-[#0000FF20]" key={index} data-aos='fade-up'
+              data-aos-offset='200'
+              data-aos-delay='50'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out' >
               <p className="text-2xl font-bold">{project.value}</p>
               <p className="text-sm ">{project.name}</p>
             </div>
@@ -90,7 +98,11 @@ const Projects = () => {
 
 
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-20 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-20 my-10" data-aos='fade-up'
+        data-aos-offset='200'
+        data-aos-delay='50'
+        data-aos-duration='1000'
+        data-aos-easing='ease-in-out'>
         <div className="card w-full h-96 bg-base-100 shadow-xl">
           <figure><img className="full" src={p1} /></figure>
           <div className="card-body">
@@ -133,10 +145,57 @@ const Projects = () => {
                 <a> <button onClick={() => window.my_modal_3.showModal()} className="bg-primary hover:bg-blue-900 rounded px-2 py-1 text-white text-xs md:text-lg">Details</button></a>
               </div>
               {/* modal-1 */}
-              <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle px-4">
-                <form method="dialog" className="modal-box">
-                  <h3 className="font-semibold text-lg">Features</h3>
-                  <p className="py-2">
+              <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle px-4 w-full">
+
+                <form method="dialog" className="modal-box md:w-11/12 md:max-w-4xl">
+                  <h3 className="font-semibold text-lg">Reviews</h3>
+
+                  <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src="https://i.ibb.co/sQ964fN/L1.jpg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/3dCvsD6/L2.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/BKbf2bD/L3.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/dKbzN9H/L4.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/qmfgYGB/L5.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/sRdsRSP/L6.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/sFHf5YS/L7.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/dWgPzp0/L8.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/9wQwLC8/L9.jpg' alt="" />
+                    </SwiperSlide>
+
+
+
+
+                  </Swiper>
+
+                  <h3 className="font-semibold text-lg mt-2">Features</h3>
+
+                  <p className="py-2 text-xs md:text-sm">
                     <li>Login and Registration system with firebase authentication.</li>
                     <li>Dashboard implementation for students, instructors and Admin and Payment Method implementation using
                       stripe.</li>
@@ -153,9 +212,44 @@ const Projects = () => {
               </dialog>
               {/* modal-2 */}
               <dialog id="my_modal_2" className="modal modal-bottom sm:modal-middle px-4">
-                <form method="dialog" className="modal-box">
-                  <h3 className="font-semibold text-lg">Features</h3>
-                  <p className="py-2">
+                <form method="dialog" className="modal-box md:w-11/12 md:max-w-4xl">
+                  <h3 className="font-semibold text-lg">Reviews</h3>
+
+                  <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src="https://i.ibb.co/bvwZpH0/d2.jpg" alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/Std8MhW/d1.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/0Vn5Wmz/d3.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/ncMx15K/d4.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/dcWZbwB/d5.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/VwXLLjc/d6.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/BVHv37D/d7.jpg' alt="" />
+                    </SwiperSlide>
+
+                  </Swiper>
+                  <h3 className="font-semibold text-lg mt-2">Features</h3>
+                  <p className="py-2 text-xs md:text-sm">
                     <li>Login and Registration system with firebase authentication.</li>
                     <li>Shop by category section people can filter and choose their suitable Disney dolls and view the details information.</li>
                     <li>My Toys page people can see only he/she added those Disney dolls.</li>
@@ -171,9 +265,38 @@ const Projects = () => {
               </dialog>
               {/* modal-3 */}
               <dialog id="my_modal_3" className="modal modal-bottom sm:modal-middle px-4">
-                <form method="dialog" className="modal-box">
-                  <h3 className="font-semibold text-lg">Features</h3>
-                  <p className="py-2">
+                <form method="dialog" className="modal-box md:w-11/12 md:max-w-4xl">
+                  <h3 className="font-semibold text-lg">Reviews</h3>
+
+                  <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+
+                    <SwiperSlide>
+                        <img className="md:h-[150px]" src='https://i.ibb.co/J5ntt7v/c1.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="md:h-[150px]" src='https://i.ibb.co/zFnRgKn/c3.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img className="md:h-[150px]" src='https://i.ibb.co/7tQg1VC/c4.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/dBzvxWQ/c5.jpg' alt="" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img className="md:h-[150px]" src='https://i.ibb.co/KjPPx6Y/c2.jpg' alt="" />
+                    </SwiperSlide>
+
+                  </Swiper>
+                  <h3 className="font-semibold text-lg mt-2">Features</h3>
+                  <p className="py-2 text-xs md:text-sm">
                     <li>Login and Registration system with firebase authentication.</li>
                     <li>View details button under private routes, without login user cannot see the recipe details.</li>
                     <li>After clicking View Recipes button if the user doesn't exist login. Then the user has to login first. Then see the details about the Recipes.</li>
@@ -197,7 +320,11 @@ const Projects = () => {
       <div className="w-full flex flex-wrap items-center justify-center gap-10 lg:gap-20 pt-10">
         {
           tools?.map((tool, index) => (
-            <div className="flex gap-2 items-center bg-white rounded-md shadow-lg px-5 py-1" key={index}>
+            <div className="flex gap-2 items-center bg-white rounded-md shadow-lg px-5 py-1" key={index} data-aos='fade-up'
+              data-aos-offset='200'
+              data-aos-delay='50'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'>
               <img className="w-10 h-10" src={tool.icon} alt="" />
               <p className="text-black text-md">{tool.name}</p>
 
