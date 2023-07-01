@@ -15,8 +15,9 @@ import bootstrap from "../assets/tools/bootstrap.png"
 import p1 from "../assets/projectImage/language/language.jpg"
 import p2 from "../assets/projectImage/disney/disney.jpg"
 import p3 from "../assets/projectImage/chef/chef.jpg"
-
+import {Zoom } from "react-awesome-reveal";
 const Projects = () => {
+
   const projects = [
     {
       name: "Total Completed Projects",
@@ -98,14 +99,14 @@ const Projects = () => {
 
 
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-20 my-10" data-aos='fade-up'
-        data-aos-offset='200'
-        data-aos-delay='50'
-        data-aos-duration='1000'
-        data-aos-easing='ease-in-out'>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 md:px-20 my-10" >
         <div className="card w-full h-96 bg-base-100 shadow-xl">
-          <figure><img className="full" src={p1} /></figure>
-          <div className="card-body">
+          <Zoom><figure><img className="full" src={p1} /></figure></Zoom>
+          <div className="card-body" data-aos='fade-up'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'>
             <h2 className="card-title">Global Language Academy</h2>
             <p>It is a foreign language learning website.Students can enroll their desire classes. </p>
             <div className=" flex gap-2 justify-between">
@@ -118,8 +119,12 @@ const Projects = () => {
         </div>
 
         <div className="card w-full h-96 bg-base-100 shadow-xl">
-          <figure><img src={p2} /></figure>
-          <div className="card-body">
+          <Zoom><figure><img src={p2} /></figure></Zoom>
+          <div className="card-body" data-aos='fade-up'
+            data-aos-offset='200'
+            data-aos-delay='50'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'>
             <h2 className="card-title">Disney Dolls Paradise</h2>
             <p>Disney dolls Paradise are a collectible Disney Dolls which is online toy marketplace.</p>
             <div className=" flex gap-2 justify-between">
@@ -134,8 +139,12 @@ const Projects = () => {
 
         <div>
           <div className="card w-full h-96 bg-base-100 shadow-xl">
-            <figure><img className="h-full w-full" src={p3} /></figure>
-            <div className="card-body">
+            <Zoom><figure><img className="h-full w-full" src={p3} /></figure></Zoom>
+            <div className="card-body" data-aos='fade-up'
+              data-aos-offset='200'
+              data-aos-delay='50'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'>
               <h2 className="card-title">Chef Corner</h2>
               <p className="w-full">ChefCorner is a online chefs collections where customers can hire their desire chefs.</p>
               <div className=" flex gap-2 justify-between">
@@ -279,13 +288,13 @@ const Projects = () => {
                   >
 
                     <SwiperSlide>
-                        <img className="md:h-[150px]" src='https://i.ibb.co/J5ntt7v/c1.jpg' alt="" />
+                      <img className="md:h-[150px]" src='https://i.ibb.co/J5ntt7v/c1.jpg' alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img className="md:h-[150px]" src='https://i.ibb.co/zFnRgKn/c3.jpg' alt="" />
+                      <img className="md:h-[150px]" src='https://i.ibb.co/zFnRgKn/c3.jpg' alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img className="md:h-[150px]" src='https://i.ibb.co/7tQg1VC/c4.jpg' alt="" />
+                      <img className="md:h-[150px]" src='https://i.ibb.co/7tQg1VC/c4.jpg' alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
                       <img className="md:h-[150px]" src='https://i.ibb.co/dBzvxWQ/c5.jpg' alt="" />

@@ -3,40 +3,22 @@ import facebook from "../assets/socials/facebook.png";
 import instagram from "../assets/socials/instagram.png";
 import email from "../assets/socials/sms.png";
 
+import { FaCloudDownloadAlt, FaEnvelopeOpen, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <div className="md:px-10 px-7 mt-24">
       <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
-        <p>@ Copyright 2022 | Md Amirul Islam</p>
+        <p>@ Copyright 2025 by Md Amirul Islam</p>
         <p className="hidden sm:block">Fullstack Developer</p>
         <p className="hidden sm:block">Designed by @amir</p>
       </div>
       {/* social media */}
-      <div className="flex mb-5 justify-center md:justify-start ">
-        <a
-          href="https://www.linkedin.com/in/joshua-harris-321a24190/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={facebook} alt="" />
-        </a>
-        <a
-          className="ml-4"
-          href="https://github.com/joshua-harris"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={instagram} alt="" />
-        </a>
-
-        <a
-          className="ml-4"
-          href="mailto:anpch@example.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={email} alt="" />
-        </a>
+      <div className='flex gap-6 w-full text-white py-4 justify-center md:justify-start '>
+        <a href="https://www.facebook.com/mdamirul.islam.718689" target="_blank"><FaFacebook className='w-5 h-5'></FaFacebook></a>
+        <a href="https://www.linkedin.com/in/md-amirul-islam-518a2b261" target='_blank'><FaLinkedinIn className='w-5 h-5'></FaLinkedinIn></a>
+        <a href="mailto:amirulislamamir412@gmail.com" target='_blank'><FaEnvelopeOpen className='w-5 h-5'></FaEnvelopeOpen></a>
+        <a href="https://github.com/A-amirul" target='_blank'><FaGithub className='w-5 h-5'></FaGithub></a>
       </div>
     </div>
   );
