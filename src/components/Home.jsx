@@ -25,7 +25,7 @@ const Home = () => {
                             <a href="https://github.com/A-amirul" target='_blank'><FaGithub className='w-5 h-5'></FaGithub></a>
                         </div>
                         <div className='mt-5 flex'>
-                            {/* <button className='btn btn-primary transition-all duration-500 bg-primary px-4 mr-2 md:px-8  rounded-full text-white hover:bg-white text-xs md:text-md normal-case' >GitHub</button>  */}
+                           
                             <a download='' href={Resume} className='btn btn-outline normal-case px-4 rounded-full text-white'>DownLoad Resume <FaCloudDownloadAlt></FaCloudDownloadAlt></a>
                         </div>
                     </div>
