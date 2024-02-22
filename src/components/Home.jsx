@@ -16,7 +16,7 @@ const Home = () => {
                     <div className='text-white'>
                         <h6 className='text-xl mt-12 text-primary'>Hello, I'm</h6>
                         <h1 className='font-semibold md:text-4xl my-4 text-3xl'>Md Amirul Islam</h1>
-                        <p className='md:w-96'> <Rotate><span className='text-2xl py-8 text-primary font-bold'>Fullstack Web developer</span> </Rotate> <br /> Dynamic and skilled web developer with expertise in HTML, CSS, JavaScript, React JS,
+                        <p className='md:w-96'><span className='text-2xl py-8 text-primary font-bold'>Fullstack Web developer</span>  <br /> Dynamic and skilled web developer with expertise in HTML, CSS, JavaScript, React JS,
                             Tailwind CSS, and Bootstrap. Familiarity with Node.js, MongoDB, and Express.js</p>
                         <div className='flex gap-4 w-full my-4'>
                             <a href="https://www.facebook.com/mdamirul.islam.718689" target="_blank"><FaFacebook className='w-5 h-5'></FaFacebook></a>

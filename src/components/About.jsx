@@ -12,7 +12,6 @@ import bootstrap from "../assets/tools/bootstrap.png"
 import { BiCheckDouble } from "react-icons/bi";
 import { FaDownload, FaFileDownload } from 'react-icons/fa';
 import CV from "../assets/Md Amirul Islam- CV.pdf"
-import { Zoom } from "react-awesome-reveal";
 
 const About = () => {
   const skills = [
@@ -104,11 +103,7 @@ const About = () => {
       <h3 className="text-center text-3xl text-primary font-bold my-10 md:my-20 ">About Me</h3>
       <div className="w-full flex flex-wrap md:gap-20 justify-center items-center md:text-xl px-10 my-10 ">
         <div className=" relative md:w-[300px]  h-full md:ms-10">
-          <Zoom><img className="rounded-full" src={profile} alt="" data-aos='fade-up'
-            data-aos-offset='200'
-            data-aos-delay='50'
-            data-aos-duration='1000'
-            data-aos-easing='ease-in-out' /></Zoom>
+          <img className="rounded" src={profile} alt="" />
         </div>
         <div className=" text-primary my-4" data-aos='fade-up'
           data-aos-offset='200'
